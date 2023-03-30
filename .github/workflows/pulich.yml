@@ -33,9 +33,10 @@ jobs:
     - name: Bundle Explanation Images
       run: >-
         montage ./img/explanation/??.*.png
+        -set colorspace RGB
+        -colorspace RGB
         -tile 3x2 -geometry +0+0
         -border 1 -bordercolor white
-        -colorspace RGB
         ./built/explanation.png
     - name: Verify Explanation Image Colorspace
       run: identify -verbose explanation.01.png |grep Colorspace
