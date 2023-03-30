@@ -39,7 +39,7 @@ jobs:
         -border 1 -bordercolor white
         ./built/explanation.png
     - name: Verify Explanation Image Colorspace
-      run: identify -verbose explanation.01.png |grep Colorspace
+      run: identify -verbose ./built/explanation.png |grep Colorspace
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
