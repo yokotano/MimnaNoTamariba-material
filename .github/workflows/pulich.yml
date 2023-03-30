@@ -35,6 +35,7 @@ jobs:
           montage ./img/explanation/??.*.png
           -tile 3x2 -geometry +0+0
           -border 1 -bordercolor white
+          -draw none
           ./built/out.png
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
