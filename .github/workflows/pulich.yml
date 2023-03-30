@@ -34,9 +34,10 @@ jobs:
       run: >-
         montage ./img/explanation/??.*.png
         -set colorspace RGB
-        -colorspace RGB
+        -colorspace sRGB
         -tile 3x2 -geometry +0+0
         -border 1 -bordercolor white
+        -define png:color-type=2
         ./built/explanation.png
     - name: Verify Explanation Image Colorspace
       run: identify -verbose ./built/explanation.png |grep Colorspace
