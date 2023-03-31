@@ -1,5 +1,6 @@
 みんなのたまり場
 ================
+[みんなのたまり場](https://vrchat.com/home/launch?worldId=wrld_0632ef6f-cc00-46a3-bf4b-621256a8fe29) から利用するコンテンツを配置します
 
 構成
 ----
