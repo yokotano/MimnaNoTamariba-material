@@ -33,8 +33,6 @@ jobs:
     - name: Bundle Explanation Images
       run: >-
         montage ./img/explanation/??.*.png
-        -set colorspace RGB
-        -colorspace sRGB
         -tile 3x2 -geometry +0+0
         -border 1 -bordercolor white
         -define png:color-type=2
